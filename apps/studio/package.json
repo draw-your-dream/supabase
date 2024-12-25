@@ -2,7 +2,6 @@
   "name": "studio",
   "version": "0.0.9",
   "private": true,
-  "packageManager": "pnpm@6.32.4",
   "scripts": {
     "dev": "next dev -p 8082",
     "dev:secrets:pull": "AWS_PROFILE=supabase-dev node ../../scripts/getSecrets.js -n local/studio",
@@ -181,7 +180,6 @@
     "prettier": "^4.0.0-alpha.8",
     "storybook-dark-mode": "^3.0.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "~5.5.0",
-    "turbo": "^2.3.3"
+    "typescript": "~5.5.0"
   }
 }
