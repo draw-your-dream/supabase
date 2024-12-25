@@ -83,6 +83,7 @@ const providers = {
     { spotify: 'spotify-icon' },
     { workos: 'workos-icon' },
     { zoom: 'zoom-icon' },
+    { wechat: 'wechat-icon' },
   ],
   phone: [
     { twilio: 'twilio-icon' },
