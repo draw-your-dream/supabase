@@ -1,4 +1,4 @@
-import { Clock, Heart, Server, SquareStack } from 'lucide-react'
+import { Clock, Heart, Server, SquareStack, Telescope } from 'lucide-react'
 
 import {
   IconBranching,
@@ -27,6 +27,7 @@ import {
   IconMenuKotlin,
   IconMenuAI,
   IconMenuDevCli,
+  IconSecurity,
   IconSupport,
   IconTroubleshooting,
 } from './MenuIcons'
@@ -87,6 +88,10 @@ function getMenuIcon(menuKey: string, width: number = 16, height: number = 16, c
       return <IconGitHub width={width} height={height} className={className} />
     case 'support':
       return <IconSupport width={width} height={height} className={className} />
+    case 'security':
+      return <IconSecurity width={width} height={height} className={className} />
+    case 'telemetry':
+      return <Telescope width={width} height={height} className={className} />
     case 'troubleshooting':
       return <IconTroubleshooting width={width} height={height} className={className} />
     case 'contributing':
@@ -95,7 +100,7 @@ function getMenuIcon(menuKey: string, width: number = 16, height: number = 16, c
       return <Server width={width} height={height} className={className} />
     case 'cron':
       return <Clock width={width} height={height} className={className} />
-    case 'queue':
+    case 'queues':
       return <SquareStack width={width} height={height} className={className} />
     default:
       return <IconMenuPlatform width={width} height={height} className={className} />
